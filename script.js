@@ -3,6 +3,8 @@ let QuotesText = document.getElementById('paragraph');
 let authorName = document.getElementById('authorName');
 let button = document.getElementById('btn');
 let copyButton = document.getElementById('copyButton');
+// getting menu button for navbar
+let menuButton = document.getElementById('menuButton');
 
 async function getData() {
     try {
@@ -45,3 +47,15 @@ async function getData() {
 }
 
 getData();
+
+// Menu button to dropdown the navbar links
+let menuButtonisClicked = false;
+menuButton.addEventListener('click' , ()=>{
+    if(!menuButtonisClicked){
+        document.getElementById('navbar-default').style.display = "block";  
+    }
+   else {
+    document.getElementById('navbar-default').style.display = "none";
+   }
+   menuButtonisClicked = !menuButtonisClicked;
+})
