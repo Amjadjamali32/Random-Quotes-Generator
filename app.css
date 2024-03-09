@@ -6,24 +6,23 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-
-.fa-brands, #copyButton {
-    color: purple;
+.fa-brands,
+#copyButton {
+    color: white;
 }
 
 #paragraph {
     height: 20rem;
 }
 
-
 @media only screen and (max-width: 1040px) {
-     #paragraph {
-        height: 14rem;  
+    #paragraph {
+        height: 14rem;
     }
 }
 
 @media only screen and (min-width: 1040px) {
     #paragraph {
-        height: 14rem; 
+        height: 14rem;
     }
 }

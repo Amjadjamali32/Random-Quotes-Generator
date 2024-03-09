@@ -31,9 +31,9 @@ async function getData() {
                 //It gets only a string not an element
                 navigator.clipboard.writeText(TextToCopy);
 
-                copyButton.style.color = "green";
+                copyButton.style.color = "yellow";
                 setTimeout(() => {
-                    copyButton.style.color = "purple";
+                    copyButton.style.color = "white";
                 }, 2000);
             })
         }

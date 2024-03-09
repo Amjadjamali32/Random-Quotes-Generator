@@ -10,10 +10,12 @@
     <title>Random Quotes Generator</title>
 </head>
 
-<body class="bg-gradient-to-r from-purple-600">
+<body style="background-image: url(/bg.gif); background-attachment: fixed;">
     <div
-        class=" bg-white rounded-md p-4 md:p-2 text-xl my-40 md:my-8 mx-2 w-3/2 h-2/4 shadow-lg text-center sm:w-3/4 sm:mx-auto md:w-2/3 md:size-full md:h-1/6">
-        <p class="text-center text-4xl font-bold my-3 md:text-6xl md:mt-4 md:font-extrabold drop-shadow-xl">Quotes of
+        class="rounded-md p-4 md:p-2 text-xl my-40 md:my-8 mx-2 w-3/2 h-2/4 shadow-lg text-center sm:w-3/4 sm:mx-24 md:w-2/3 md:size-full md:h-1/6 bg-transparent text-white fixed md:mx-48 xl:mx-64">
+        <p
+            class="text-center text-4xl font-bold my-3 md:text-6xl md:mt-4 md:font-extrabold drop-shadow-xl text-yellow-400">
+            Quotes of
             the Day</p>
         <div class="p-2 my-2 mx-auto rounded-md text-lg font-semibold">
             <p id="paragraph" class="text-2xl sm:text-3xl p-3 my-2 font-semibold md:my-0"><span id="coyText">The best
@@ -23,20 +25,34 @@
                 Keller</p>
         </div>
         <button
-            class="bg-purple-800 text-white px-8 py-3 my-2 rounded-full font-bold hover:cursor-pointer hover:opacity-80 shadow-sm"
+            class="bg-slate-800 text-yellow-400 px-8 py-3 my-2 rounded-full font-bold hover:cursor-pointer hover:opacity-80 shadow-sm md:px-12 md:py-2"
             id="btn">New Quote</button>
-        <hr class="font-extrabold bg-purple-800 my-2">
-        <div class="flex flex-col justify-center sm:flex-row sm:my-4 sm:p-4 md:my-0 md:p-2">
-            <div class="m-2">
+        <div class="flex flex-row justify-center sm:flex-row sm:my-8 md:my-8 sm:p-4 md:p-2 my-8">
+            <div
+                class="m-2 md:mx-6 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
                 <button id="copyButton"><i class="fa-solid fa-copy fa-2xl"></i></button>
             </div>
-            <div class="m-2">
+            <div
+                class="m-2 md:mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
                 <a href="https://www.linkedin/in/amjad-ali-271430253/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
-            <div class="m-2 hover: cursor-pointer">
+            <div
+                class="m-2 hover: cursor-pointer md:mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
                 <a href="https://github.com/Amjadjamali32/AmjadJamali32.git"><i
                         class="fa-brands fa-github fa-2xl"></i></a>
             </div>
+            <div
+                class="m-2 hover: cursor-pointer md:mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
+                <a href="https://www.instagram.com/amjadjamali54"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+            <div
+                class="m-2 hover: cursor-pointer md:mx-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">
+                <a href="https://www.telegram.com/AmjadAliJamali2118/"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+            </div>
+        </div>
+        <div>
+            <p class="my-2 text-center font-semibold drop-shadow-sm"><span
+                    class="text-xl text-yellow-400 font-bold">Made By: </span>Amjad Ali Jamali</p>
         </div>
     </div>
     <script src="script.js"></script>
