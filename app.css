@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+
+.fa-brands, #copyButton {
+    color: purple;
+}
+
+#paragraph {
+    height: 20rem;
+}
+
+@media only screen and (min-width: 1040px) {
+     #paragraph {
+        height: 10rem;  
+    }
+}
+
+    /* @media only screen and (max-width: 768px) {
+        #paragraph {
+            height: 18rem; /* Height at small screens 
+        }
+    } */
