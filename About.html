@@ -2,109 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>About | Random Quotes Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>About | Random Quotes Generator</title>
 </head>
 
 <body style="background-image: url(/bg.gif); background-attachment: fixed;">
-    <header>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900 bg-fixed">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="logo.png" class="h-8" alt="Flowbite Logo" />
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:dark:text-yellow-400 ">Quotes
-                        Generator</span>
-                </a>
-                <button id="menuButton" data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full md:block md:w-auto mx-2" id="navbar-default">
-                    <ul
-                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="index.html"
-                                class="block py-2 px-3 text-white rounded md:bg-transparent md:text-yellow-400 md:p-0 dark:text-white md:dark:text-yellow-400"
-                                aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="About.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-                        </li>
-                        <li>
-                            <a href="Contact.html"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="text-white">
-        
-<div id="accordion-open" data-accordion="open">
-    <h2 id="accordion-open-heading-1">
-      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-1" aria-expanded="true" aria-controls="accordion-open-body-1">
-        <span class="flex items-center"><svg class="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What is Flowbite?</span>
-        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-        </svg>
-      </button>
-    </h2>
-    <div id="accordion-open-body-1" class="hidden" aria-labelledby="accordion-open-heading-1">
-      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-        <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+  <header>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 bg-fixed">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="logo.png" class="h-8" alt="Flowbite Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:dark:text-yellow-400 ">Quotes
+            Generator</span>
+        </a>
+        <button id="menuButton" data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto mx-2" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-white rounded md:bg-transparent md:text-yellow-400 md:p-0 dark:text-white md:dark:text-yellow-400"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="About.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="Contact.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-400 md:p-0 dark:text-white md:dark:hover:text-yellow-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <div class="text-white md:justify-items-center flex flex-col items-center">
+    <h2 class="text-center font-bold text-yellow-400 my-4 text-3xl">About us</h2>
+
+    <div class="my-4 md:w-1/2 md:my-2">
+      <p class="text-2xl text-yellow-400 text-bold text-center mx-2">What is Random Quotes Generator?</p>
+      <p class="text-center p-3">A random quote generator is a software program or online tool that generates random
+        quotations or phrases from a predefined database or collection. These generators typically source quotes from
+        various authors, books, movies, or famous speeches. </p>
     </div>
-    <h2 id="accordion-open-heading-2">
-      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-2" aria-expanded="false" aria-controls="accordion-open-body-2">
-        <span class="flex items-center"><svg class="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>Is there a Figma file available?</span>
-        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-        </svg>
-      </button>
-    </h2>
-    <div id="accordion-open-body-2" class="hidden" aria-labelledby="accordion-open-heading-2">
-      <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-        <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
-      </div>
+
+    <div class="flex flex-col my-4 md:w-1/2 md:my-2">
+      <p class="text-2xl text-yellow-400 text-bold text-center">How it Works?</p>
+      <p class="text-center p-2">It works through the use of an API. A Random Quotes Generator first makes an API request whenever the page is loaded. As you clicks on new quote button it goes to the next quote. </p>
     </div>
-    <h2 id="accordion-open-heading-3">
-      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-open-body-3" aria-expanded="false" aria-controls="accordion-open-body-3">
-        <span class="flex items-center"><svg class="w-5 h-5 me-2 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg> What are the differences between Flowbite and Tailwind UI?</span>
-        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-        </svg>
-      </button>
-    </h2>
-    <div id="accordion-open-body-3" class="hidden" aria-labelledby="accordion-open-heading-3">
-      <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-        <p class="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-        <p class="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-        <p class="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-        <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
-          <li><a href="https://flowbite.com/pro/" class="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-          <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-        </ul>
+    <div class="my-4 md:w-1/2">
+      <p class="text-2xl text-yellow-400 text-bold text-center">Which Technology is used?</p>
+      <p class="text-center p-3">The technoloy used in Random Quotes Generator is tailwind CSS for attractive and responsive layout. The design of this app is created using tailwind CSS the most poweful and famous framework of CSS. Functionality provided in it is totally javaScript. javaScript is used in it to make it functionaly good.</p>
+    </div>
+
+    <div class="my-4 md:text-center md:w-1/2 md:my-2">
+      <p class="text-2xl text-yellow-400 text-bold text-center">What are its features?</p>
+      <p class="mx-3 p-3">The main features of it:<br />
+        <span class="text-yellow-400">1.</span> It can generate new Quote (the main functionality).<br />
+        <span class="text-yellow-400">2.</span> You can copy a quote and paste it where you want.<br />
+        <span class="text-yellow-400">3.</span> You can send a reponse or review or any suggestion to us through contact form.<br />
+        Feature which will be  implemented in near Future:<br />
+        <span class="text-yellow-400">1.</span> A navigator which reads the quote and tells you.<br />
+        <span class="text-yellow-400">2.</span> Search feature to search quotes of your interest.<br />
+        <span class="text-yellow-400">3.</span> A voice system for search input.
+      </p>
+    </div>
+
+    <div class="my-4 md:w-1/2 md:my-2">
+      <p class="text-2xl text-yellow-400 text-bold text-center">Who developed this?</p>
+      <div class="flex flex-col justify-center items-center">
+        <img src="myimage.png" alt="this is an image" class="rounded-full w-60 h-60 mx-auto my-3">
+        <p class="text-3xl font-bold text-yellow-400">Amjad Ali</p>
+        <p class="text-center font-semibold text-2xl p-2">Front - end Web Developer</p>
+        <p class="text-center mx-4 p-2">
+          I am a professional Front-end Web Developer. I create front-end
+          websites.I have a depth knowledge of front-end languages like
+          HTML, CSS and JavaScript. I have also knowledge of front-end
+          frameworks. I create front-end websites that are responsive,
+          optimized, cutomizable and fast. I have also knowledge of other
+          programming languages like C++ and SQL in databases. I create
+          websites using latest technologies that are very attractive in
+          layout.
+        </p>
       </div>
     </div>
   </div>
-  
-
-    </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
