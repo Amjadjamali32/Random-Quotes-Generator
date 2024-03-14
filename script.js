@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 // Random Quotes generator 
 let QuotesText = document.getElementById('paragraph');
 let authorName = document.getElementById('authorName');
@@ -59,3 +60,18 @@ menuButton.addEventListener('click' , ()=>{
    }
    menuButtonisClicked = !menuButtonisClicked;
 })
+
+// for active links 
+// JavaScript code to handle active state of navigation links
+
+    var currentUrl = window.location.href;
+    var navLinks = document.querySelectorAll("#navbar-default a");
+
+    navLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});
